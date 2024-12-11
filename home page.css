@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f3ef;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sub-header {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 30%;
+  min-width: 280px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.card-description {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #555;
+}
+
+.footer {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
